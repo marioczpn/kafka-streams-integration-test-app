@@ -1,6 +1,0 @@
-/Users/mariocp/git/redhat/kafka-streams-integration-test-app/src/main/java/com/github/marioczpn/kafka/streams/controller/KafkaManagerController.java
-/Users/mariocp/git/redhat/kafka-streams-integration-test-app/src/main/java/com/github/marioczpn/kafka/streams/constants/Constants.java
-/Users/mariocp/git/redhat/kafka-streams-integration-test-app/src/main/java/com/github/marioczpn/kafka/streams/helper/ConsumerCreatorHelper.java
-/Users/mariocp/git/redhat/kafka-streams-integration-test-app/src/main/java/com/github/marioczpn/kafka/streams/helper/ProducerCreatorHelper.java
-/Users/mariocp/git/redhat/kafka-streams-integration-test-app/src/main/java/com/github/marioczpn/kafka/streams/helper/FileHelper.java
-/Users/mariocp/git/redhat/kafka-streams-integration-test-app/src/main/java/com/github/marioczpn/kafka/streams/KafkaStreamsIntegrationTestMainApp.java
