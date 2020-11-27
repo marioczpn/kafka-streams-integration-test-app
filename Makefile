@@ -1,5 +1,5 @@
 APP_NAME=kafka-streams-integration-test-app
-APP_VERSION=1.0
+APP_VERSION=latest
 DOCKER_REPO=quay.io/marioczpn
 DOCKER_EMAIL=
 DOCKER_USERNAME=
@@ -32,7 +32,7 @@ help:
 # DOCKER TASKS
 # Build the container
 build: ## Build the container
-	${DOCKER_CMD} build -t ${DOCKER_REGISTRY} .
+	${DOCKER_CMD} build . --file dev.Dockerfile --tag latest
 
 login: ## Login to docker hub
 	${DOCKER_CMD} login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
