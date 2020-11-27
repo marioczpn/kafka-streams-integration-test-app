@@ -6,6 +6,7 @@ DOCKER_USERNAME=
 DOCKER_PASSWORD=
 DOCKER_CMD ?= docker
 DOCKER_REGISTRY=$(DOCKER_REPO)/${APP_NAME}:${APP_VERSION}
+MVN_ARGS=
 
 # HELP
 # This will output the help for each task
@@ -32,7 +33,7 @@ help:
 # DOCKER TASKS
 # Build the container
 build: ## Build the container
-	${DOCKER_CMD} build . --file dev.Dockerfile --tag latest
+	${DOCKER_CMD} build . --file dev.Dockerfile --tag ${DOCKER_REGISTRY}
 
 login: ## Login to docker hub
 	${DOCKER_CMD} login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
