@@ -1,4 +1,4 @@
-![Java CI with Maven/Docker](https://github.com/marioczpn/kafka-streams-integration-test-app/workflows/Java%20CI%20with%20Maven/Docker/badge.svg)
+![CI/CD Pipelines](https://github.com/marioczpn/kafka-streams-integration-test-app/workflows/CI/CD%20Pipelines/badge.svg)
 
 # kafka-streams-integration-test-app
  
