@@ -40,7 +40,10 @@ The application is using the github actions and it's using a different [Dockerfi
 
 To run the application locally you can use the jar generated into target folder:
 
-- If you set the environment variables you can run:
+- Set Environment variables:
+    - **ATTENTION**: The KAFKA_ACTION_ENVVAR (Env variable) defines the type of application, for example:
+        - If you set **_KAFKA_ACTION_ENVVAR=PRODUCER_** - It will produce message to kafka, but if you define **KAFKA_ACTION_ENVVAR=CONSUMER** it will run as KAFKA Consumer.
+
 
     export BOOTSTRAP_SERVERS_ENVVAR=127.0.0.1:9092
     export APPLICATION_ID_ENVVAR=integration-test-app
@@ -50,10 +53,10 @@ To run the application locally you can use the jar generated into target folder:
     export KAFKA_ACTION_ENVVAR=PRODUCER
     export TOPIC_MSG_ENVVAR=integrationTest
 
-`java -jar kafka-streams-convert-base64-app-1.0-SNAPSHOT.jar`
+- If you set the environment variables you can run:
 
-- **ATTENTION**: The KAFKA_ACTION_ENVVAR (Env variable) defines the type of application, for example:
-    - If you set **_KAFKA_ACTION_ENVVAR=PRODUCER_** - It will produce message to kafka, but if you define **KAFKA_ACTION_ENVVAR=CONSUMER** it will run as KAFKA Consumer.
+`java -jar kafka-streams-integration-test-app-1.0-SNAPSHOT.jar`
+
 
 ## Deploy to Kubernetes
 Please open the deployment automation to this project available [here](https://github.com/marioczpn/strimzi-kafka-cluster-deployment-automation)
